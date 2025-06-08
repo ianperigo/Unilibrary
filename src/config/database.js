@@ -28,7 +28,7 @@ import 'dotenv/config'; // Mantém o dotenv para facilitar o desenvolvimento loc
 const sequelize = new Sequelize(
     process.env.MYSQLDATABASE,      // Alterado de DB_NAME
     process.env.MYSQLUSER,          // Alterado de DB_USER
-    process.env.MYSQLROOTPASSWORD,  // Alterado de DB_PASSWORD para a senha do root
+    process.env.MYSQL_ROOT_PASSWORD,  // Alterado de DB_PASSWORD para a senha do root
     {
         host: process.env.MYSQLHOST, // Alterado de DB_HOST
         port: process.env.MYSQLPORT, // Adicionado a porta, que é essencial
