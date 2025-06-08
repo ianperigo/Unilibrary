@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const API_URL = 'http://localhost:3000';
+    const API_URL = 'https://unilibrary-production.up.railway.app/';
 
     // Formulários
     const registerForm = document.getElementById('register-form');
