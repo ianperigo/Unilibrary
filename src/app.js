@@ -18,7 +18,8 @@ connectDatabase();
 // --- LOGS PARA DEBUG ---
 console.log('--- INICIANDO DEBUG DE CAMINHOS ---');
 console.log('Diretório atual (__dirname):', __dirname);
-const publicPath = path.join(__dirname, 'public');
+// Sobe um diretório ('..') a partir de /src e depois entra em /public
+const publicPath = path.join(__dirname, '..', 'public');
 console.log('Caminho completo para a pasta public:', publicPath);
 console.log('--- FIM DO DEBUG DE CAMINHOS ---');
 // --- FIM DOS LOGS ---
